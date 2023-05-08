@@ -206,7 +206,7 @@
     width: calc((100% - 72px) / 2);
   }
 
-  .advantages-item .section-subtitle {
+  .advantages-item .subtitle {
     margin-left: 0;
   }
   /* =====section work-none====== */
@@ -236,7 +236,8 @@
   .over-footer {
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
+    /* align-items: start; */
+    padding-left: 108px;
   }
   .blok-footer {
     margin-right: 24px;
@@ -250,6 +251,7 @@
   .footer-subtitle {
     display: block;
     margin-left: 0;
+    text-align: start;
   }
 
   .box-text {
