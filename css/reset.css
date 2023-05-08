@@ -93,7 +93,7 @@ body {
 
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2px;
+  line-height: 1.2;
 
   text-align: center;
 }
@@ -130,4 +130,5 @@ body {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
+  text-align: start;
 }

@@ -296,7 +296,7 @@
 .modal-link {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11px;
+  line-height: 1.11;
 
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -305,12 +305,19 @@
 }
 
 .modal-contact-tel {
+  max-width: 100%;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11px;
+  line-height: 1.11;
   text-transform: capitalize;
 
   color: #4d5ae5;
+}
+
+@media screen and (max-width: 427px) {
+  .modal-contact-tel {
+    font-size: 26px;
+  }
 }
 
 .modal-contact {
@@ -571,6 +578,10 @@
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+
+.teacher-list:last-child {
+  margin-bottom: 0;
 }
 
 .information-list {
