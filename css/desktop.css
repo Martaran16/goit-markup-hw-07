@@ -1,0 +1,162 @@
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/bac-people-office.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient
+          (rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url("../images/logo/logo-des@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  /*navigation  */
+  .header-address {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .outh-nav {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .outh-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  /* =====hero======= */
+  .hero {
+    padding: 188px 0;
+  }
+
+  .hero-subject {
+    margin-bottom: 48px;
+  }
+  /* work-section  */
+
+  .advantages-section {
+    padding: 120px 0;
+  }
+
+  .advantages-list {
+    max-width: 1128px;
+    gap: 24px;
+  }
+  /* isplay: flex;
+    align-items: center; */
+  .advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0px;
+    /* gap: 8px; */
+    width: calc((100% - 72px) / 4);
+  }
+
+  .icon-bac {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 264px;
+    height: 112px;
+
+    background: var(--design-element);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .social-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .section-feature {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  /* ==========section 3========== */
+
+  .work-section {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .work-list {
+    display: flex;
+  }
+
+  .work-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  /* section individual */
+
+  .section-individual {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    background-color: var(--design-element);
+  }
+
+  .individual-lists {
+    flex-wrap: nowrap;
+  }
+
+  /* ========compani link======== */
+
+  .compani {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: auto;
+  }
+
+  .compani-lists {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  /* footer     */
+  .footer {
+    display: flex;
+
+    background-color: var(--title-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+  }
+
+  .blok-footer {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .contacts-active {
+    margin-right: 80px;
+  }
+  .footer-link-icon {
+    margin-bottom: 0;
+  }
+}

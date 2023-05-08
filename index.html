@@ -15,18 +15,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/vars.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- top-line -->
+    <!-- class="btn-mobile" -->
     <header class="header section">
       <div class="navigation-section container">
         <nav class="header-nav">
-          <a href="./index.html" class="header-logo">
-            Web<span class="header-logo-studio">Studio</span>
-          </a>
-
-          <!-- navigation -->
+          <div class="btn-burger-menu">
+            <a href="./index.html" class="header-logo">
+              Web<span class="header-logo-studio">Studio</span>
+            </a>
+            <button
+              type="submit"
+              class="menu-toggle mobile-open js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="burger" width="32" height="22">
+                <use
+                  class="icon-hamburger"
+                  href="./images/icons.svg#icon-burger"
+                ></use>
+              </svg>
+            </button>
+          </div>
 
           <ul class="nav-items list">
             <li class="nav-item">
@@ -41,18 +62,14 @@
           </ul>
         </nav>
 
-        <!-- address -->
-
         <address class="header-address">
           <ul class="outh-nav list">
             <li class="outh-item">
-              <!-- link address mail  -->
               <a href="mailto:info@devstudio.com" class="outh-link link"
                 >info@devstudio.com</a
               >
             </li>
             <li class="outh-item">
-              <!-- link namber telephone -->
               <a href="tel:+110001111111" class="outh-link link"
                 >+11 (000) 111-11-11</a
               >
@@ -67,7 +84,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-subject">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn" data-modal-open>
+          <button type="submit" class="hero-btn" data-modal-open>
             Order Service
           </button>
         </div>
@@ -75,22 +92,22 @@
 
       <!-- section2 advantages-->
       <section class="advantages-section section">
-        <div class="advantages-container container">
+        <div class="container">
           <h2 class="visually-hidden">information</h2>
           <ul class="advantages-list list">
-            <li class="advantages-item item">
+            <li class="advantages-item">
               <div class="icon-bac">
                 <svg class="social-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="section-subtitle">Strategy</h3>
-              <p class="section-feature">
+              <p class="section-feature mobile">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="advantages-item item">
+            <li class="advantages-item">
               <div class="icon-bac">
                 <svg class="social-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -102,7 +119,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="advantages-item item">
+            <li class="advantages-item">
               <div class="icon-bac">
                 <svg class="social-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -114,7 +131,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="advantages-item item">
+            <li class="advantages-item">
               <div class="icon-bac">
                 <svg class="social-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -138,6 +155,11 @@
             <li class="work-item">
               <img
                 src="./images/rectangle-computer.jpg"
+                srcset="
+                  ./images/rectangle-computer.jpg 1x,
+                  ./images/rectangle1-@2x.jpg     2x
+                "
+                loading="lazy"
                 alt="computer"
                 width="360"
               />
@@ -145,6 +167,11 @@
             <li class="work-item">
               <img
                 src="./images/rectangle-screen.jpg"
+                srcset="
+                  ./images/rectangle-screen.jpg 1x,
+                  ./images/rectangle2-@2x.jpg   2x
+                "
+                loading="lazy"
                 alt="screen"
                 width="360"
               />
@@ -152,6 +179,11 @@
             <li class="work-item">
               <img
                 src="./images/rectangle-telrphone.jpg"
+                srcset="
+                  ./images/rectangle-telrphone.jpg 1x,
+                  ./images/rectangle3-@2x.jpg      2x
+                "
+                loading="lazy"
                 alt="telephone"
                 width="360"
               />
@@ -160,7 +192,7 @@
         </div>
       </section>
 
-      <!--info-teacher section4 -->
+      <!-- info-teacher section4 -->
       <section class="section-individual section">
         <div class="individual-container container">
           <h2 class="section-title">Our Team</h2>
@@ -169,6 +201,11 @@
               <img
                 class="img-list"
                 src="./images/mark-guerrero-img.jpg"
+                srcset="
+                  ./images/mark-guerrero-img.jpg 1x,
+                  ./images/img-mark1-@2x.jpg     2x
+                "
+                loading="lazy"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -227,6 +264,11 @@
               <img
                 class="img-list"
                 src="./images/tom-ford-img.jpg"
+                srcset="
+                  ./images/tom-ford-img.jpg 1x,
+                  ./images/img-tom2-@2x.jpg 2x
+                "
+                loading="lazy"
                 alt="Tom Ford"
                 width="264"
               />
@@ -285,6 +327,11 @@
               <img
                 class="img-list"
                 src="./images/camila-garcia-img.jpg"
+                srcset="
+                  ./images/camila-garcia-img.jpg 1x,
+                  ./images/img-camila3-@2x.jpg   2x
+                "
+                loading="lazy"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -343,6 +390,11 @@
               <img
                 class="img-list"
                 src="./images/daniel-wilson-img.jpg"
+                srcset="
+                  ./images/daniel-wilson-img.jpg 1x,
+                  ./images/img-daniel4-@2x.jpg   2x
+                "
+                loading="lazy"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -515,7 +567,7 @@
           </ul>
         </div>
 
-        <div class="sctive-form-footer">
+        <div class="active-form-footer">
           <p class="footer-subtitle">Subscribe</p>
           <form action="Subscribe" class="mail-form">
             <label>
@@ -526,7 +578,8 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="btn-mail hero-btn">Subscribe</button>
+
+            <button type="submit" class="btn-mail">Subscribe</button>
           </form>
         </div>
       </div>
@@ -540,7 +593,6 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </div>
-        <!-- form -->
 
         <form action="modal-open-form" class="modal-form">
           <h2 class="modal-titl">
@@ -597,6 +649,99 @@
         </form>
       </div>
     </div>
+
+    <!-- mobile-modal -->
+    <!-- backdropp is-hidden -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="close-menu slose-btn js-close-menu">
+        <svg class="close-svg" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <!-- <div class="modal-menu"> -->
+      <ul class="modal-items list">
+        <li class="modal-item list">
+          <a href="./index.html" class="modal-link link">Studio</a>
+        </li>
+        <li class="modal-item">
+          <a href="./portfolio.html" class="modal-link link">Portfolio</a>
+        </li>
+        <li class="modal-item">
+          <a href="" class="modal-link link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="modal-nav list">
+        <li class="modal-outh-item">
+          <a href="tel:+110001111111" class="modal-contact-tel link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mail-outh-item">
+          <a href="mailto:info@devstudio.com" class="modal-contact link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="info-link-icon modal-links">
+        <li class="link-icon-teacher link-modal">
+          <a
+            class="link-content-icon-people"
+            href=""
+            aria-label="link to instagram"
+          >
+            <svg class="social-list" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="link-icon-teacher link-modal">
+          <a
+            class="link-content-icon-people"
+            href=""
+            aria-label="link to twitter"
+          >
+            <svg class="social-list" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="link-icon-teacher link-modal">
+          <a
+            class="link-content-icon-people"
+            href=""
+            aria-label="link to facebook"
+          >
+            <svg class="social-list" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="link-icon-teacher link-modal">
+          <a
+            class="link-content-icon-people"
+            href=""
+            aria-label="link to linkedin"
+          >
+            <svg class="social-list" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- </div> -->
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
