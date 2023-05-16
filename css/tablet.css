@@ -24,7 +24,11 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    max-width: 100%;
+    width: 768px;
+    padding: 0 16px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .menu-toggle {
@@ -32,41 +36,9 @@
   }
   /* nav */
 
-  /* ================= */
-
-  /* .navigation-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-  } */
-
-  /* .header {
-    border-bottom: 1px solid var(--border-box);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  } */
-
-  /* .header-nav {
-    display: flex;
-    align-items: center;
-  } */
-
   .header-logo {
     margin-right: 76px;
-
-    /* color: var(--primary-button-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none; */
   }
-  /* .header-logo-studio {
-    color: var(--title-text-color);
-  } */
 
   /* navigation -----------------------------*/
 
@@ -269,5 +241,44 @@
   .futer-mail {
     width: 264px;
     margin: 0;
+  }
+
+  /*========== porfolio========== */
+  .section-filtr {
+    padding: 64px 0 96px;
+  }
+
+  .filters-items {
+    flex-wrap: nowrap;
+    margin-bottom: 64px;
+  }
+
+  .btn-link {
+    padding: 12px 24px;
+  }
+
+  /* photo-portfolio 2 */
+  .section-portfolio {
+    gap: 72px 24px;
+  }
+
+  .img-text {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .info-link {
+    margin: 0 auto;
+    padding: 32px 16px;
+
+    border: 1px solid var(--border-box);
+    border-top: none;
+  }
+  .img-portfolio_link:hover,
+  .img-portfolio_link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
 }

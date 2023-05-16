@@ -7,7 +7,6 @@
   text-align: center;
 }
 /* ==========modal========= */
-/* modal-------------------- */
 .backdropp.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -251,9 +250,6 @@
   opacity: 0;
   pointer-events: none;
 }
-/* .menu-container.is-open {
-  transform: translate(0);
-} */
 
 .is-open {
   visibility: visible;
@@ -398,12 +394,11 @@
   stroke: black;
 }
 
-/* =======navigation tablet========= */
+/* navigation mobile */
 .nav-items {
   display: none;
 }
 
-/* address  */
 .header-address {
   display: none;
 }
@@ -411,8 +406,6 @@
 /* hero */
 
 .hero {
-  box-sizing: border-box;
-  /* max-height: 600; */
   max-width: 1440px;
   margin: auto;
   padding: 112px 0;
@@ -487,19 +480,8 @@
 }
 
 .advantages-list {
-  box-sizing: border-box;
   max-width: 428px;
 }
-/* display: flex;
-  align-items: center;
-  gap: 24px none; */
-
-/* display: block;
-  position: absolute; */
-/* flex-direction: column;
-  align-items: flex-start;
-  padding: 0px; */
-/* gap: 72px; */
 
 .advantages-item {
   box-sizing: inherit;
@@ -507,10 +489,6 @@
   padding: 0px;
   margin-bottom: 72px;
 }
-/* flex-direction: column;
-  align-items: baseline; 
-   gap: 8px;
-  width: calc((100% - 72px) / 4); */
 
 .advantages-item:last-child {
   margin-bottom: 0;
@@ -526,15 +504,7 @@
   background: var(--design-element);
   border-radius: 4px;
   margin-bottom: 8px;
-
-  /* justify-content: center;
-  align-items: center; */
 }
-
-/* .social-icon {
-  width: 64px;
-  height: 64px;
-} */
 
 .section-feature.mobile {
   max-width: 396px;
@@ -634,8 +604,6 @@
 
 .social-list {
   fill: var(--design-element);
-  width: 16px;
-  height: 16px;
 }
 
 /* ========compani link======== */
@@ -849,31 +817,23 @@
 /* ======================================================== */
 /*========== porfolio========== */
 .section-filtr {
-  padding: 96px 0 120px;
+  padding: 48px 0;
 }
 
 .filters-items {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
 
-  margin-bottom: 72px;
-  gap: 24px;
+  margin-bottom: 48px;
+  gap: 16px 24px;
   align-items: center;
-
-  flex-direction: row;
   justify-content: center;
-}
-.btn {
-  align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
 .btn-link {
-  display: flex;
   margin: 0;
-  padding: 12px 24px;
-  align-items: center;
+  padding: 8px 16px;
   border: 1px solid var(--border-box);
   border-radius: 4px;
 
@@ -890,48 +850,16 @@
     color var(--anim-transition), border var(--anim-transition),
     box-shadow var(--anim-transition), border-radius var(--anim-transition);
 }
-.ntn-link:not(:last-child) {
-  margin-right: 12px 24px;
-}
 
-.btn-link:hover,
-.btn-link:focus {
-  background-color: var(--active-button-color);
-  color: var(--background-style-color);
-  border: none;
-  border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-/* section-portfolio 2 */
+/* photo-portfolio 2 */
 .section-portfolio {
   display: flex;
   flex-wrap: wrap;
-}
-.img-info {
-  display: flex;
-  justify-content: center;
-  margin-right: 24px;
-  margin-bottom: 48px;
-  width: 360px;
+  gap: 48px;
 }
 
-.img-info:nth-child(3n) {
-  margin-right: 0;
-}
-.img-info:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-.img-portfolio_link {
-  transition: box-shadow var(--anim-transition);
-}
-
-.img-portfolio_link:hover,
-.img-portfolio_link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.text-photo {
+  display: none;
 }
 
 .info-link {
@@ -942,27 +870,9 @@
   border-top: none;
 }
 
-.img-text {
-  position: relative;
-  overflow: hidden;
-}
-
-.text-photo {
-  background-color: var(--primary-button-color);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  padding: 40px 32px;
-  transform: translateY(100%);
-  transition: transform var(--anim-transition);
-}
-
-.img-info:hover .text-photo,
-.img-info:focus .text-photo {
-  transform: translateY(0%);
+.section-subtitle {
+  margin: 0 auto 8px;
+  text-align: start;
 }
 
 @media screen and (min-width: 428px) {
